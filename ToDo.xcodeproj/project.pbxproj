@@ -11,6 +11,8 @@
 		AB4BBF942C80272600C32D66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BBF932C80272600C32D66 /* ContentView.swift */; };
 		AB4BBF962C80272900C32D66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4BBF952C80272900C32D66 /* Assets.xcassets */; };
 		AB4BBF992C80272900C32D66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4BBF982C80272900C32D66 /* Preview Assets.xcassets */; };
+		AB4BBFA02C80275300C32D66 /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BBF9F2C80275300C32D66 /* TodoDetailView.swift */; };
+		AB4BBFA22C80276600C32D66 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BBFA12C80276600C32D66 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AB4BBF932C80272600C32D66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB4BBF952C80272900C32D66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4BBF982C80272900C32D66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB4BBF9F2C80275300C32D66 /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
+		AB4BBFA12C80276600C32D66 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				AB4BBF912C80272600C32D66 /* ToDoApp.swift */,
 				AB4BBF932C80272600C32D66 /* ContentView.swift */,
+				AB4BBFA12C80276600C32D66 /* Todo.swift */,
+				AB4BBF9F2C80275300C32D66 /* TodoDetailView.swift */,
 				AB4BBF952C80272900C32D66 /* Assets.xcassets */,
 				AB4BBF972C80272900C32D66 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4BBF942C80272600C32D66 /* ContentView.swift in Sources */,
+				AB4BBFA02C80275300C32D66 /* TodoDetailView.swift in Sources */,
 				AB4BBF922C80272600C32D66 /* ToDoApp.swift in Sources */,
+				AB4BBFA22C80276600C32D66 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
