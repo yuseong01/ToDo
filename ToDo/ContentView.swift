@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    //커밋용
+    
     @State var todoList: [Todo] = [
         Todo(title: "친구만나기"),
         Todo(title: "과제제출하기"),
