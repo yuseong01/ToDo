@@ -6,18 +6,19 @@
 //
 
 import Foundation
+import SwiftData
 
-@Observable
+@Model  //데이터를 관리할거다
 class Todo : Identifiable{
     let id: UUID
     var title: String
     var isCompleted: Bool
-    var description: String
+    var detail: String
     
     init(title: String) {
         self.id = UUID()
         self.title = title
         self.isCompleted = false
-        self.description = ""
+        self.detail = ""
     }
 }

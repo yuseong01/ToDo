@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    
-    @State var todoList: [Todo] = [
+    @Environment(\.modelContext) private var modelContext   //이코드 없으면 조회만 가능, 있으면 생성 및 삭제 가능
+    @Query var todoList: [Todo] = [ //스위프트데이터에서 쓸거야:Query
         Todo(title: "친구만나기"),
         Todo(title: "과제제출하기"),
         Todo(title: "푹쉬기")
@@ -18,14 +19,17 @@ struct ContentView: View {
     func addTodo() {
         withAnimation{
             let newTodo = Todo(title: "새로운 투두")
-            todoList.append(newTodo)
+            //todoList.append(newTodo)    
+            modelContext.insert(newTodo) //todoList에 직접접근X, 얘를 품고 있는 modelContext에 접근해야함
         }
     }
     
     func deleteTodo(indexSet: IndexSet){
         withAnimation{
             for index in indexSet{
-                todoList.remove(at: index)
+                //todoList.remove(at: index)
+                let todo = todoList[index]
+                modelContext.delete(todo)
             }
         }
     }
